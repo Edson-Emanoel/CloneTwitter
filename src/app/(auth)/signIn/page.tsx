@@ -1,0 +1,19 @@
+import { SigninForm } from "@/app/components/auth/signin-form";
+import { Logo } from "@/app/components/ui/logo";
+import Link from "next/link";
+
+export default function signIn (){
+      return (
+            <div className="max-w-lg mx-auto mt-12 px-6">
+                  <Logo size={56} />
+                  <h1 className="mt-1 text-2xl">Entre na sua conta</h1>
+                  <div className="mt-10 mb-14 flex flex-col gap-6">
+                        <SigninForm />
+                  </div>
+                  <div className="flex flex-col justify-center items-center gap-1 md:flex-row">
+                        <div className="text-gray-500">Ainda não tem conta ?</div>
+                        <Link href="/signUp" className="hover:underline">Cadastre-se</Link>
+                  </div>
+            </div>
+      )
+}
