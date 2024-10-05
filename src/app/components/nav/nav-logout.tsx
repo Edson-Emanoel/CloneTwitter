@@ -2,13 +2,13 @@
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFontAwesomeLogoFull } from "@fortawesome/free-regular-svg-icons";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
-export const NavLogOut = () => {
+export const NavLogout = () => {
       const router = useRouter()
 
       const handleClick = () => {
-            router.replace("/signIn")
+            router.replace("/signIn")     
       }
 
       return(
